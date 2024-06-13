@@ -37,7 +37,7 @@ const Home = async ({searchParams}:{searchParams: FilterProps}) => {
         !isDataEmpty ? (<section>
           <div className="home__cars-wrapper">
             {
-              allCars?.map((car, index) => <CarCard key={index} car={car} />)
+              allCars.map((car, index) => <CarCard key={index} car={car} />)
             }
                 <ShowMore
               pageNumber={(searchParams.limit || 10) / 10}
