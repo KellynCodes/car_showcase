@@ -4,7 +4,7 @@ import { fetchCars } from '@utils';
 import { FilterProps } from '@types';
 import { fuels, yearsOfProduction } from '@constants';
 
-const Home = async (searchParams: FilterProps) => {
+const Home = async ({searchParams}:{searchParams: FilterProps}) => {
   const allCars = await fetchCars({
     manufacturer: searchParams.manufacturer || "",
     year: searchParams.year || 2022,
