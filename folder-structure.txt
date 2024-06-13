@@ -1,0 +1,90 @@
+/folder-structure
+├── public
+│   ├── favicon.ico
+│   ├── robots.txt
+│   ├── images
+│   │   ├── logo.png
+│   │   └── banner.jpg
+├── src
+│   ├── app
+│   │   ├── api
+│   │   │   ├── auth
+│   │   │   │   ├── [...nextauth].ts
+│   │   │   │   └── index.ts
+│   │   ├── (auth)
+│   │   │   ├── login
+│   │   │   │   ├── page.tsx
+│   │   │   │   └── Login.module.css
+│   │   ├── (dashboard)
+│   │   │   ├── page.tsx
+│   │   │   ├── [id]
+│   │   │   │   ├── page.tsx
+│   │   └── layout.tsx
+│   │   └── page.tsx
+│   ├── components
+│   │   ├── common
+│   │   │   ├── Button
+│   │   │   │   ├── Button.tsx
+│   │   │   │   ├── Button.test.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── Input
+│   │   │   │   ├── Input.tsx
+│   │   │   │   ├── Input.test.tsx
+│   │   │   │   └── index.ts
+│   │   └── layout
+│   │       ├── Header
+│   │       │   ├── Header.tsx
+│   │       │   ├── Header.test.tsx
+│   │       │   └── index.ts
+│   │       ├── Footer
+│   │       │   ├── Footer.tsx
+│   │       │   ├── Footer.test.tsx
+│   │       │   └── index.ts
+│   │       └── Sidebar
+│   │           ├── Sidebar.tsx
+│   │           ├── Sidebar.test.tsx
+│   │           └── index.ts
+│   ├── contexts
+│   │   ├── AuthContext.tsx
+│   │   ├── ThemeContext.tsx
+│   │   └── index.ts
+│   ├── hooks
+│   │   ├── useAuth.ts
+│   │   ├── useTheme.ts
+│   │   └── useFetch.ts
+│   ├── lib
+│   │   ├── api.ts
+│   │   ├── auth.ts
+│   │   └── utils.ts
+│   ├── redux
+│   │   ├── store.ts
+│   │   ├── rootReducer.ts
+│   │   ├── slices
+│   │   │   ├── authSlice.ts
+│   │   │   ├── userSlice.ts
+│   │   │   └── themeSlice.ts
+│   │   └── actions
+│   │       ├── authActions.ts
+│   │       ├── userActions.ts
+│   │       └── themeActions.ts
+│   ├── styles
+│   │   ├── globals.css
+│   │   ├── Home.module.css
+│   │   └── theme.css
+│   ├── types
+│   │   ├── auth.ts
+│   │   ├── index.ts
+│   │   └── user.ts
+│   ├── utils
+│   │   ├── formatters.ts
+│   │   ├── helpers.ts
+│   │   └── validators.ts
+│   ├── middleware.ts
+│   ├── next-env.d.ts
+│   ├── next.config.js
+│   ├── tsconfig.json
+│   └── jest.config.js
+├── .env.local
+├── .gitignore
+├── package.json
+└── README.md
